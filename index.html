@@ -1,1 +1,367 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="description" content="Kasir Cuan, solusi kasir digital yang praktis untuk membantu usaha Anda mengelola penjualan, produk, dan laporan omzet.">
+  <title>Kasir Cuan — Bisnis Makin Mudah, Cuan Makin Bertambah</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * { font-family: 'Plus Jakarta Sans', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { color: #172554; }
+    .hero-bg {
+      background:
+        radial-gradient(circle at 80% 20%, rgba(129,140,248,.25), transparent 30%),
+        linear-gradient(135deg, #eef2ff 0%, #ffffff 60%, #f5f3ff 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #4f46e5, #7c3aed);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #4f46e5, #6d28d9);
+      transition: .2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(79,70,229,.25);
+    }
+    .feature-card {
+      transition: .25s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(30,41,59,.08);
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-100">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-extrabold text-xl">K</div>
+        <span class="text-xl font-extrabold tracking-tight text-slate-900">Kasir <span class="text-indigo-600">Cuan</span></span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#beranda" class="hover:text-indigo-600">Beranda</a>
+        <a href="#fitur" class="hover:text-indigo-600">Fitur</a>
+        <a href="#solusi" class="hover:text-indigo-600">Solusi Usaha</a>
+        <a href="#harga" class="hover:text-indigo-600">Harga</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+      </div>
+
+      <a href="#kontak" class="btn-primary text-white px-5 py-3 rounded-xl text-sm font-bold">
+        Hubungi Kami
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="beranda" class="hero-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-xs font-bold mb-7">
+          <span class="w-2 h-2 bg-indigo-600 rounded-full"></span>
+          Aplikasi Kasir Digital untuk Usaha Anda
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-slate-900">
+          Bisnis Makin Mudah,
+          <span class="gradient-text">Cuan Makin Bertambah.</span>
+        </h1>
+
+        <p class="mt-6 text-lg leading-8 text-slate-600 max-w-xl">
+          Kelola transaksi, produk, dan laporan penjualan dalam satu aplikasi kasir yang praktis. Fokus mengembangkan usaha, biarkan Kasir Cuan membantu pekerjaan Anda.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-9">
+          <a href="#fitur" class="btn-primary text-white px-7 py-4 rounded-xl font-bold">
+            Kenali Fitur Kami
+          </a>
+          <a href="#harga" class="bg-white border border-slate-200 text-slate-700 px-7 py-4 rounded-xl font-bold hover:border-indigo-300">
+            Lihat Paket
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-6 mt-10 text-sm text-slate-500 font-medium">
+          <span>✓ Praktis digunakan</span>
+          <span>✓ Laporan lebih teratur</span>
+          <span>✓ Cocok untuk berbagai usaha</span>
+        </div>
+      </div>
+
+      <!-- ILUSTRASI DASHBOARD -->
+      <div class="relative">
+        <div class="absolute -inset-5 bg-indigo-200/40 blur-3xl rounded-full"></div>
+
+        <div class="relative bg-white rounded-3xl shadow-2xl border border-slate-100 p-5 md:p-7">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-5">
+            <div>
+              <p class="text-xs text-slate-400 font-semibold">DASHBOARD KASIR</p>
+              <h3 class="font-extrabold text-slate-900 text-xl mt-1">Ringkasan Penjualan</h3>
+            </div>
+            <div class="bg-indigo-50 text-indigo-600 rounded-xl px-3 py-2 text-xs font-bold">Kasir Cuan</div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-indigo-50 rounded-2xl p-4">
+              <p class="text-xs text-slate-500">Total Penjualan</p>
+              <p class="text-xl md:text-2xl font-extrabold text-indigo-700 mt-2">Rp 2,4 jt</p>
+              <p class="text-xs text-indigo-500 mt-2">Ilustrasi dashboard</p>
+            </div>
+            <div class="bg-violet-50 rounded-2xl p-4">
+              <p class="text-xs text-slate-500">Total Transaksi</p>
+              <p class="text-xl md:text-2xl font-extrabold text-violet-700 mt-2">48</p>
+              <p class="text-xs text-violet-500 mt-2">Ilustrasi dashboard</p>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-slate-50 rounded-2xl p-5">
+            <div class="flex justify-between items-center mb-5">
+              <p class="font-bold text-slate-800">Aktivitas Penjualan</p>
+              <span class="text-xs text-slate-400">Contoh tampilan</span>
+            </div>
+            <div class="flex items-end gap-3 h-36">
+              <div class="flex-1 bg-indigo-200 rounded-t-lg h-[40%]"></div>
+              <div class="flex-1 bg-indigo-300 rounded-t-lg h-[65%]"></div>
+              <div class="flex-1 bg-indigo-400 rounded-t-lg h-[50%]"></div>
+              <div class="flex-1 bg-indigo-300 rounded-t-lg h-[78%]"></div>
+              <div class="flex-1 bg-indigo-500 rounded-t-lg h-[90%]"></div>
+              <div class="flex-1 bg-violet-500 rounded-t-lg h-[70%]"></div>
+              <div class="flex-1 bg-indigo-600 rounded-t-lg h-full"></div>
+            </div>
+            <div class="flex justify-between text-xs text-slate-400 mt-3">
+              <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span>
+            </div>
+          </div>
+
+          <div class="mt-5 flex items-center gap-3 bg-emerald-50 rounded-xl p-4">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">✓</div>
+            <div>
+              <p class="text-sm font-bold text-slate-800">Transaksi lebih terorganisir</p>
+              <p class="text-xs text-slate-500">Kelola penjualan dalam satu aplikasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FITUR -->
+  <section id="fitur" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">Fitur Unggulan</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4">
+          Semua Kebutuhan Kasir dalam Satu Aplikasi
+        </h2>
+        <p class="text-slate-500 mt-5 leading-7">
+          Bantu operasional usaha menjadi lebih praktis dengan fitur yang dirancang untuk kebutuhan bisnis sehari-hari.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl">▣</div>
+          <h3 class="font-extrabold text-xl mt-6">Kasir Digital</h3>
+          <p class="text-slate-500 leading-7 mt-3">Catat transaksi penjualan dengan alur pembayaran yang praktis dan mudah digunakan.</p>
+        </div>
+
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-violet-100 text-violet-600 flex items-center justify-center text-2xl">▤</div>
+          <h3 class="font-extrabold text-xl mt-6">Manajemen Produk</h3>
+          <p class="text-slate-500 leading-7 mt-3">Kelola daftar produk, harga, dan informasi barang dalam satu tempat.</p>
+        </div>
+
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl">▥</div>
+          <h3 class="font-extrabold text-xl mt-6">Laporan Penjualan</h3>
+          <p class="text-slate-500 leading-7 mt-3">Pantau omzet dan rekap transaksi agar perkembangan usaha lebih mudah dievaluasi.</p>
+        </div>
+
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">▦</div>
+          <h3 class="font-extrabold text-xl mt-6">Scan Barcode</h3>
+          <p class="text-slate-500 leading-7 mt-3">Gunakan scanner barcode untuk membantu proses pencarian produk dan transaksi.</p>
+        </div>
+
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl">▧</div>
+          <h3 class="font-extrabold text-xl mt-6">Cetak Struk</h3>
+          <p class="text-slate-500 leading-7 mt-3">Berikan bukti transaksi kepada pelanggan melalui fitur cetak struk.</p>
+        </div>
+
+        <div class="feature-card border border-slate-100 rounded-2xl p-7">
+          <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-2xl">✦</div>
+          <h3 class="font-extrabold text-xl mt-6">Fitur Premium</h3>
+          <p class="text-slate-500 leading-7 mt-3">Nikmati fitur tambahan seperti scan barcode melalui kamera dan pembuatan label barcode produk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUSI USAHA -->
+  <section id="solusi" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">Untuk Berbagai Usaha</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 leading-tight">
+          Apa pun Usahanya, Kelola Lebih Mudah Bersama Kasir Cuan
+        </h2>
+        <p class="text-slate-500 leading-8 mt-6">
+          Dari usaha makanan hingga toko retail, Kasir Cuan membantu Anda mencatat transaksi dan mengelola penjualan dengan lebih teratur.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl">☕</div>
+          <h3 class="font-extrabold mt-4">Kafe & Kuliner</h3>
+          <p class="text-sm text-slate-500 mt-2">Kelola transaksi makanan dan minuman.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl">🛒</div>
+          <h3 class="font-extrabold mt-4">Toko Retail</h3>
+          <p class="text-sm text-slate-500 mt-2">Catat penjualan berbagai produk.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl">🥐</div>
+          <h3 class="font-extrabold mt-4">Toko Roti</h3>
+          <p class="text-sm text-slate-500 mt-2">Bantu transaksi harian lebih praktis.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl">🏪</div>
+          <h3 class="font-extrabold mt-4">Usaha Mandiri</h3>
+          <p class="text-sm text-slate-500 mt-2">Kelola usaha dengan lebih terorganisir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARGA -->
+  <section id="harga" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">Pilihan Paket</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4">Pilih Paket Sesuai Kebutuhan Usaha</h2>
+        <p class="text-slate-500 mt-5">Mulai dari kebutuhan dasar hingga fitur tambahan untuk mendukung operasional usaha Anda.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="border border-slate-200 rounded-3xl p-8">
+          <h3 class="font-extrabold text-xl">Gratis</h3>
+          <p class="text-slate-500 text-sm mt-3">Untuk mengenal dan mulai menggunakan Kasir Cuan.</p>
+          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
+          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
+            <p>✓ Fitur dasar kasir</p>
+            <p>✓ Pengelolaan produk</p>
+            <p>✓ Pencatatan transaksi</p>
+          </div>
+        </div>
+
+        <div class="border-2 border-indigo-600 rounded-3xl p-8 shadow-xl relative">
+          <div class="absolute -top-3 right-7 bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-full">Pilihan Paket</div>
+          <h3 class="font-extrabold text-xl">Hemat</h3>
+          <p class="text-slate-500 text-sm mt-3">Untuk usaha yang membutuhkan pengelolaan kasir harian.</p>
+          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
+          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
+            <p>✓ Fitur kasir</p>
+            <p>✓ Pengelolaan produk</p>
+            <p>✓ Laporan penjualan</p>
+            <p>✓ Dukungan scanner fisik</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-3xl p-8">
+          <h3 class="font-extrabold text-xl">Premium</h3>
+          <p class="text-slate-500 text-sm mt-3">Untuk usaha yang membutuhkan fitur lebih lengkap.</p>
+          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
+          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
+            <p>✓ Fitur paket Hemat</p>
+            <p>✓ Scan barcode melalui kamera</p>
+            <p>✓ Pembuatan barcode produk</p>
+            <p>✓ Cetak label barcode</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-8">Informasi harga dan ketentuan paket akan diumumkan lebih lanjut.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="kontak" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gradient-to-r from-indigo-700 to-violet-700 rounded-3xl p-10 md:p-16 text-center text-white">
+        <p class="text-indigo-200 font-bold text-sm uppercase tracking-widest">Saatnya Beralih ke Digital</p>
+        <h2 class="text-3xl md:text-5xl font-extrabold mt-5 leading-tight">
+          Siap Mengelola Usaha dengan Lebih Mudah?
+        </h2>
+        <p class="text-indigo-100 mt-6 max-w-2xl mx-auto leading-7">
+          Kenali Kasir Cuan dan temukan cara yang lebih praktis untuk mengelola transaksi serta penjualan usaha Anda.
+        </p>
+        <a href="mailto:info@kasircuan.com" class="inline-block mt-9 bg-white text-indigo-700 px-8 py-4 rounded-xl font-extrabold hover:bg-indigo-50">
+          Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">FAQ</p>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-4">Pertanyaan Umum</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="font-bold cursor-pointer">Apa itu Kasir Cuan?</summary>
+          <p class="text-slate-500 leading-7 mt-4">Kasir Cuan adalah aplikasi kasir digital untuk membantu usaha mengelola transaksi, produk, dan laporan penjualan.</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="font-bold cursor-pointer">Apakah Kasir Cuan cocok untuk usaha kecil?</summary>
+          <p class="text-slate-500 leading-7 mt-4">Ya. Kasir Cuan dirancang untuk membantu berbagai jenis usaha, termasuk usaha kecil dan menengah.</p>
+        </details>
+
+        <details class="bg-white rounded-2xl p-6 shadow-sm">
+          <summary class="font-bold cursor-pointer">Apa perbedaan paket Hemat dan Premium?</summary>
+          <p class="text-slate-500 leading-7 mt-4">Paket Premium menyediakan fitur tambahan seperti scan barcode melalui kamera dan pembuatan serta pencetakan label barcode produk.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <div class="text-white text-xl font-extrabold">Kasir <span class="text-indigo-400">Cuan</span></div>
+        <p class="text-sm mt-3">Solusi kasir digital untuk usaha yang terus berkembang.</p>
+      </div>
+      <div class="text-sm md:text-right">
+        <p>© 2026 Kasir Cuan. Seluruh hak cipta dilindungi.</p>
+        <p class="mt-2">Bisnis Makin Mudah, Cuan Makin Bertambah.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
