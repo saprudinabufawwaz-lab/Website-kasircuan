@@ -42,6 +42,27 @@
       transform: translateY(-5px);
       box-shadow: 0 18px 40px rgba(30,41,59,.08);
     }
+    /* EFEK TIMBUL UNTUK SEMUA KARTU */
+#fitur .feature-card,
+#solusi .grid > div,
+#harga .grid > div,
+#beranda .relative.bg-white,
+#beranda .grid.grid-cols-2 > div,
+#beranda .mt-6.bg-slate-50,
+#beranda .mt-5.flex {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fitur .feature-card:hover,
+#solusi .grid > div:hover,
+#harga .grid > div:hover,
+#beranda .relative.bg-white:hover,
+#beranda .grid.grid-cols-2 > div:hover,
+#beranda .mt-6.bg-slate-50:hover,
+#beranda .mt-5.flex:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 35px rgba(79, 70, 229, 0.13);
+}
   </style>
 </head>
 
@@ -258,55 +279,105 @@
     </div>
   </section>
 
-  <!-- HARGA -->
-  <section id="harga" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">Pilihan Paket</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4">Pilih Paket Sesuai Kebutuhan Usaha</h2>
-        <p class="text-slate-500 mt-5">Mulai dari kebutuhan dasar hingga fitur tambahan untuk mendukung operasional usaha Anda.</p>
-      </div>
+<!-- HARGA -->
+<section id="harga" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
 
-      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <div class="border border-slate-200 rounded-3xl p-8">
-          <h3 class="font-extrabold text-xl">Gratis</h3>
-          <p class="text-slate-500 text-sm mt-3">Untuk mengenal dan mulai menggunakan Kasir Cuan.</p>
-          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
-          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
-            <p>✓ Fitur dasar kasir</p>
-            <p>✓ Pengelolaan produk</p>
-            <p>✓ Pencatatan transaksi</p>
-          </div>
-        </div>
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <p class="text-indigo-600 font-extrabold text-sm uppercase tracking-widest">
+        Pilihan Paket
+      </p>
 
-        <div class="border-2 border-indigo-600 rounded-3xl p-8 shadow-xl relative">
-          <div class="absolute -top-3 right-7 bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-full">Pilihan Paket</div>
-          <h3 class="font-extrabold text-xl">Hemat</h3>
-          <p class="text-slate-500 text-sm mt-3">Untuk usaha yang membutuhkan pengelolaan kasir harian.</p>
-          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
-          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
-            <p>✓ Fitur kasir</p>
-            <p>✓ Pengelolaan produk</p>
-            <p>✓ Laporan penjualan</p>
-            <p>✓ Dukungan scanner fisik</p>
-          </div>
-        </div>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4">
+        Pilih Paket Sesuai Kebutuhan Usaha
+      </h2>
 
-        <div class="border border-slate-200 rounded-3xl p-8">
-          <h3 class="font-extrabold text-xl">Premium</h3>
-          <p class="text-slate-500 text-sm mt-3">Untuk usaha yang membutuhkan fitur lebih lengkap.</p>
-          <div class="text-2xl font-extrabold mt-7">Harga menyusul</div>
-          <div class="border-t border-slate-100 mt-7 pt-6 text-sm text-slate-600 space-y-3">
-            <p>✓ Fitur paket Hemat</p>
-            <p>✓ Scan barcode melalui kamera</p>
-            <p>✓ Pembuatan barcode produk</p>
-            <p>✓ Cetak label barcode</p>
-          </div>
-        </div>
-      </div>
-      <p class="text-center text-xs text-slate-400 mt-8">Informasi harga dan ketentuan paket akan diumumkan lebih lanjut.</p>
+      <p class="text-slate-500 mt-5">
+        Mulai secara gratis dan nikmati fitur tambahan dengan paket Premium.
+      </p>
     </div>
-  </section>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+      <!-- PAKET GRATIS -->
+      <div class="border border-slate-200 rounded-3xl p-8 md:p-10 bg-white">
+
+        <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6">
+          ✦
+        </div>
+
+        <h3 class="font-extrabold text-2xl text-slate-900">
+          Gratis
+        </h3>
+
+        <p class="text-slate-500 text-sm mt-3 leading-6">
+          Pilihan tepat untuk memulai pengelolaan usaha secara digital.
+        </p>
+
+        <div class="mt-7">
+          <span class="text-4xl font-extrabold text-indigo-600">Gratis</span>
+          <p class="text-sm text-slate-400 mt-1">Tanpa biaya berlangganan</p>
+        </div>
+
+        <div class="border-t border-slate-100 mt-8 pt-7 space-y-4 text-sm text-slate-600">
+          <p>✓ Fitur kasir digital</p>
+          <p>✓ Manajemen produk</p>
+          <p>✓ Pencatatan transaksi</p>
+          <p>✓ Laporan penjualan</p>
+          <p>✓ Dukungan scanner barcode fisik</p>
+        </div>
+
+        <div class="mt-8 bg-indigo-50 text-indigo-700 text-center rounded-xl py-3 font-bold text-sm">
+          Tersedia Gratis
+        </div>
+      </div>
+
+      <!-- PAKET PREMIUM -->
+      <div class="border-2 border-indigo-600 rounded-3xl p-8 md:p-10 bg-white relative">
+
+        <div class="absolute -top-4 right-8 bg-indigo-600 text-white text-xs font-bold px-5 py-2 rounded-full">
+          FITUR LENGKAP
+        </div>
+
+        <div class="w-14 h-14 rounded-2xl bg-violet-100 text-violet-600 flex items-center justify-center text-2xl mb-6">
+          ★
+        </div>
+
+        <h3 class="font-extrabold text-2xl text-slate-900">
+          Premium
+        </h3>
+
+        <p class="text-slate-500 text-sm mt-3 leading-6">
+          Untuk usaha yang ingin menikmati seluruh fitur unggulan Kasir Cuan.
+        </p>
+
+        <div class="mt-7">
+          <span class="text-4xl font-extrabold text-indigo-600">Premium</span>
+          <p class="text-sm text-slate-400 mt-1">Informasi harga melalui WhatsApp</p>
+        </div>
+
+        <div class="border-t border-slate-100 mt-8 pt-7 space-y-4 text-sm text-slate-600">
+          <p>✓ Semua fitur paket Gratis</p>
+          <p>✓ Scan barcode melalui kamera</p>
+          <p>✓ Membuat barcode produk</p>
+          <p>✓ Cetak label barcode</p>
+          <p>✓ Fitur Premium lainnya</p>
+        </div>
+
+        <div class="mt-8 bg-indigo-600 text-white text-center rounded-xl py-3 font-bold text-sm">
+          Fitur Eksklusif Premium
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-xs text-slate-400 mt-10">
+      Hubungi tim Kasir Cuan untuk informasi aktivasi dan harga Premium.
+    </p>
+
+  </div>
+</section>
+
 
   <!-- CTA -->
   <section id="kontak" class="py-20">
